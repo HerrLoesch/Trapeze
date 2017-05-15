@@ -23,7 +23,7 @@ namespace StackKata
 
             var last = _content.Last();
 
-            _content.Remove(last);
+            _content.RemoveAt(_content.Count - 1);
 
             return last;
         }

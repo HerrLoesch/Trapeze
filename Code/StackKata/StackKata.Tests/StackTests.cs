@@ -62,19 +62,6 @@ namespace StackKata.Tests
         }
 
         [TestMethod]
-        public void A_pushed_items_are_returned_in_reverse_order()
-        {
-            _sut.Push(1);
-            _sut.Push(2);
-            int firstResult = _sut.Pop();
-            int secondResult = _sut.Pop();
-
-            Assert.AreEqual(1, secondResult);
-            Assert.AreEqual(2, firstResult);
-        }
-
-
-        [TestMethod]
         public void A_pushed_item_is_returned_on_pop()
         {
             _sut.Push(1);
@@ -84,7 +71,7 @@ namespace StackKata.Tests
         }
 
         [TestMethod]
-        public void Foo()
+        public void A_pushed_items_are_returned_in_reverse_order()
         {
             _sut.Push(1);
             _sut.Push(2);
