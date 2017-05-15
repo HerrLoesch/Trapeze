@@ -82,5 +82,24 @@ namespace StackKata.Tests
 
             Assert.AreEqual(1, result);
         }
+
+        [TestMethod]
+        public void Foo()
+        {
+            _sut.Push(1);
+            _sut.Push(2);
+            _sut.Push(1);
+            _sut.Push(1);
+            int fourth = _sut.Pop();
+
+            int third = _sut.Pop();
+            int second = _sut.Pop();
+            int first = _sut.Pop();
+
+            Assert.AreEqual(1, fourth);
+            Assert.AreEqual(1, third);
+            Assert.AreEqual(2, second);
+            Assert.AreEqual(1, first);
+        }
     }
 }
