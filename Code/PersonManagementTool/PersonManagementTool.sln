@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Specifications", "Specifica
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonManagementTool.Specs", "PersonManagementTool.Sepcs\PersonManagementTool.Specs.csproj", "{125021B3-8AEA-4D6F-AE77-30CDE8726E42}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonManagementTool.SystemTests", "PersonManagementTool.SystemTests\PersonManagementTool.SystemTests.csproj", "{B9346C99-5807-4555-8FA0-0538DD2895EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,11 +43,16 @@ Global
 		{125021B3-8AEA-4D6F-AE77-30CDE8726E42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{125021B3-8AEA-4D6F-AE77-30CDE8726E42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{125021B3-8AEA-4D6F-AE77-30CDE8726E42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9346C99-5807-4555-8FA0-0538DD2895EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9346C99-5807-4555-8FA0-0538DD2895EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9346C99-5807-4555-8FA0-0538DD2895EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9346C99-5807-4555-8FA0-0538DD2895EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{125021B3-8AEA-4D6F-AE77-30CDE8726E42} = {FF924C7D-3C4D-4D17-8B4C-372774669CCB}
+		{B9346C99-5807-4555-8FA0-0538DD2895EC} = {FF924C7D-3C4D-4D17-8B4C-372774669CCB}
 	EndGlobalSection
 EndGlobal
