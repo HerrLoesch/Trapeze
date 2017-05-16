@@ -81,9 +81,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="When_the_person_selection_is_visible.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PersonManagementTool.UI\PersonManagementTool.UI.csproj">
+      <Project>{d92901c6-fef0-444c-915b-98e72fddf0ef}</Project>
+      <Name>PersonManagementTool.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PersonManagementTool\PersonManagementTool.csproj">
+      <Project>{51389ABD-A86E-41D0-B53F-BCB533684319}</Project>
+      <Name>PersonManagementTool</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
