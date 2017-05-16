@@ -1,0 +1,6 @@
+﻿V First list contains strings in alphabetical order.
+V Second list contains strings in priority order (Strings  at top have higher priority).
+- Strings can either be in list 1 or list 2.
+V Strings can be moved from list 1 to list 2. Than they are removed from list 1 and appear at the end of list 2.
+V Strings can be moved from list 2 to list 1. Than they are removed fron list 2 and appear at their alphabeticaly correct position.
+- List 1 can be filtered with a filter string. Only elements containing string are part of list 1.

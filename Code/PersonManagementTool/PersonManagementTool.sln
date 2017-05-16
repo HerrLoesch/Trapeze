@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonManagementTool", "PersonManagementTool\PersonManagementTool.csproj", "{51389ABD-A86E-41D0-B53F-BCB533684319}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonManagementTool.UI", "PersonManagementTool.UI\PersonManagementTool.UI.csproj", "{D92901C6-FEF0-444C-915B-98E72FDDF0EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonManagementTool.Data", "PersonManagementTool.Data\PersonManagementTool.Data.csproj", "{72DA997D-DCB2-435D-BBA5-2C154738FDEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonManagementTool.Bussiness", "PersonManagementTool.Bussiness\PersonManagementTool.Bussiness.csproj", "{0902EFEB-207A-4BC0-8344-26BB2A3AD695}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Specifications", "Specifications", "{FF924C7D-3C4D-4D17-8B4C-372774669CCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonManagementTool.Specs", "PersonManagementTool.Sepcs\PersonManagementTool.Specs.csproj", "{125021B3-8AEA-4D6F-AE77-30CDE8726E42}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51389ABD-A86E-41D0-B53F-BCB533684319}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51389ABD-A86E-41D0-B53F-BCB533684319}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51389ABD-A86E-41D0-B53F-BCB533684319}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51389ABD-A86E-41D0-B53F-BCB533684319}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D92901C6-FEF0-444C-915B-98E72FDDF0EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D92901C6-FEF0-444C-915B-98E72FDDF0EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D92901C6-FEF0-444C-915B-98E72FDDF0EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D92901C6-FEF0-444C-915B-98E72FDDF0EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72DA997D-DCB2-435D-BBA5-2C154738FDEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72DA997D-DCB2-435D-BBA5-2C154738FDEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72DA997D-DCB2-435D-BBA5-2C154738FDEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72DA997D-DCB2-435D-BBA5-2C154738FDEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0902EFEB-207A-4BC0-8344-26BB2A3AD695}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0902EFEB-207A-4BC0-8344-26BB2A3AD695}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0902EFEB-207A-4BC0-8344-26BB2A3AD695}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0902EFEB-207A-4BC0-8344-26BB2A3AD695}.Release|Any CPU.Build.0 = Release|Any CPU
+		{125021B3-8AEA-4D6F-AE77-30CDE8726E42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{125021B3-8AEA-4D6F-AE77-30CDE8726E42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{125021B3-8AEA-4D6F-AE77-30CDE8726E42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{125021B3-8AEA-4D6F-AE77-30CDE8726E42}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{125021B3-8AEA-4D6F-AE77-30CDE8726E42} = {FF924C7D-3C4D-4D17-8B4C-372774669CCB}
+	EndGlobalSection
+EndGlobal
