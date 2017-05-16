@@ -1,0 +1,15 @@
+- Write one class called PersonDialogViewModel
+- This gets a collection of Person data from a PersonRepository.
+- This can get Person detailed information from a PersonRepository based on an PersonID.
+
+- The PersonDialogViewModel must have an Initialization method which is called when the view is shown.
+
+Requirements:
+- All Persons are shown when class is initialized.
+- First Person in PersonsCollection is selected when class is initialized
+- Details of the selected persons are read from Repository after one Person is selected, using the ID of the person.
+- A new Person object is set as selected when the user hits "create".
+- Person data is written to repository if Save is called.
+- Person collection must be updated after data was saved so it contains the changes.
+- Add a the new Person object to the collection if it was saved. 
+	
