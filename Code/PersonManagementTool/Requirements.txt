@@ -5,8 +5,8 @@
 - The PersonDialogViewModel must have an Initialization method which is called when the view is shown.
 
 Requirements:
-- All Persons are shown when class is initialized.
-- First Person in PersonsCollection is selected when class is initialized
+- All Persons are written to a public property when class is initialized.
+- First Person in PersonsCollection is set to a property SelectedPerson when class is initialized
 - Details of the selected persons are read from Repository after one Person is selected, using the ID of the person.
 - A new Person object is set as selected when the user hits "create".
 - Person data is written to repository if Save is called.

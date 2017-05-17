@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PersonManagementTool.UI
 {
@@ -18,9 +15,16 @@ namespace PersonManagementTool.UI
         public void Initialize()
         {
             AvailablePersons = _personRepository.GetPersons();
+            var firstPerson = AvailablePersons.FirstOrDefault();
+
+
+            if (firstPerson != null)
+            {
+                this.SelectedPerson = _personRepository.GetPerson(firstPerson.Id);
+            }
         }
 
-        public IEnumerable<Person> AvailablePersons { get; set; }
-        public Person SelectedPerson { get; set; }
+        public IEnumerable<Person> AvailablePersons { get; private set; }
+        public Person SelectedPerson { get; private set; }
     }
 }

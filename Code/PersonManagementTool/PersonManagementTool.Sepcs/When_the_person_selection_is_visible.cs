@@ -12,13 +12,19 @@ namespace PersonManagementTool.Sepcs
     public class When_the_person_selection_is_visible : Specifies<MainWindowViewModel>
     {
         private IEnumerable<Person> _persons;
+        private IPersonRepository _personRepository;
+        private Person _selectedPerson;
 
         public override void Given()
         {
             _persons = Randomizer<Person>.Create(10);
+            _selectedPerson = Randomizer<Person>.Create();
+            _selectedPerson.Id = _persons.First().Id;
 
-            var personRepository = this.GetInstance<IPersonRepository>();
-            A.CallTo(() => personRepository.GetPersons()).Returns(_persons);
+            _personRepository = A.Fake<IPersonRepository>();
+
+            A.CallTo(() => _personRepository.GetPersons()).Returns(_persons);
+            A.CallTo(() => _personRepository.GetPerson(A<int>.Ignored)).Returns(_selectedPerson);
         }
 
         public override void When()
@@ -35,7 +41,13 @@ namespace PersonManagementTool.Sepcs
         [Test]
         public void Then_the_first_available_person_must_be_selected()
         {
-            this.SUT.SelectedPerson.ShouldBeEquivalentTo(_persons.First());
+            this.SUT.SelectedPerson.ShouldBeEquivalentTo(_selectedPerson);
         }
+    }
+
+
+    public class When_a_person_is_selected : Specifies<MainWindowViewModel>
+    {
+
     }
 }
